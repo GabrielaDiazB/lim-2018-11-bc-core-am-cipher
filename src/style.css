@@ -1,0 +1,15 @@
+button {
+    background-color: crimson;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border:none; 
+  
+}
+button:hover{
+    background-color: darkred;
+    color: gray;
+    font-size:14px;
+    font-weight: bold;
+    
+}

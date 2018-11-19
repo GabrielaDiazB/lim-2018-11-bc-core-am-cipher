@@ -1,15 +1,21 @@
 let n; // n es el offset
-let letras;
+let i; //letra por letra
 let texto;
-let string = []; 
+let string = ["ABC"]; 
 let codigo = [];
 let nuevoCodigo = []; //aquí rebotará el código
 
 //función que codificará el texto
 function cifradoDeTexto()
 {
-    for(let letras=0; letras<string.length; letras++){
-        (texto.charCodeAt(letras)-65+n)%26+65
-    }
+    for(i=0; i<string.length; i++){
+        string.push((texto.charCodeAt(i)-65+1)%26+65);
+        return string;
+    };
+    //if (condition) {} else {};
 };
 //función que decodificará el texto
+function decifradoDeTexto(){}
+//Eventos para dar mostrar u ocultar divs
+
+//Eventos para dar funcionabilidad a los botones
