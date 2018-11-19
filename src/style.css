@@ -8,7 +8,7 @@ button {
 }
 button:hover{
     background-color: darkred;
-    color: gray;
+    color: white;
     font-size:14px;
     font-weight: bold;
     
