@@ -1,15 +1,67 @@
+body{
+    margin: auto;
+}
+
+div{
+    text-align: center;
+    padding: 20px;
+
+}
+
+p{
+    text-align: center;
+
+}
+#offsetBox{
+    width:10%;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+#textBox{
+    width:150px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    outline-color: red;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    resize: none;
+    
+    
+}
+#textBox:focus{
+    width:80%;
+}
+
 button {
-    background-color: crimson;
-    color: white;
-    font-size: 12px;
+    background-color: steelblue;
+    color: whitesmoke;
+    font-size: 18px;
     font-weight: bold;
-    border:none; 
+    font-family: 'Courier New', Courier, monospace;
+    border-radius:5px;
+    border:none;
+    box-shadow: 0 2px #999;
+    transition-duration:0.3s;
+    margin:15px 0 15px 10px;
+    outline: none;
   
 }
+
 button:hover{
-    background-color: darkred;
+    background-color: cornflowerblue ;
     color: white;
-    font-size:14px;
+    font-size:18px;
     font-weight: bold;
-    
+    border:none;
+}
+
+button:active{
+    box-shadow: 0 1px #666;
+    transform: translateY(3px);
+}
+
+#resultsBox{   
+    border-width: 2px;
+    border-style: inset;
+
 }
