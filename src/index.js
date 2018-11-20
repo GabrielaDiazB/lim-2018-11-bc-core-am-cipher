@@ -1,28 +1,36 @@
-let n; // n es el offset
-let i; //letra por letra
-let texto;//primer texto que es ingresado
-let string = []; //aquí se va a guardar push del texto en ascii
-let codigo = []; //
-let nuevoCodigo = []; //aquí rebotará el código
 
-n = document.getElementById("offsetBox").value;
-texto = document.getElementById("textBox").value;
 //función que codificará el texto
+
+
 function cifradoDeTexto(){
-    for(i=0; i<texto.length; i++){
-        string.push((texto.charCodeAt(i)-65+n)%26+65);
-        if (texto.charCodeAt(i) >= 65 && texto.charCodeAt(i) >= 77) {
-            codigo.push(string.fromCharcodeAt(texto.charCodeAt(i)))
-        };    
+    let n; // n es el offset
+    let texto = '' ;//primer texto que es ingresado
+    let stringAscii = [] //aquí se va a guardar push del texto en ascii
+    let codigo = []; 
+    
+    n = document.getElementById("offsetBox").value;
+    texto = document.getElementById("textBox").value;
+    
+    for(let i=0; i<texto.length; i++){
+        stringAscii = texto.toUpperCase().charCodeAt(i); 
+          
     };
-    nuevoCodigo = codigo.join(" ");
-    document.getElementById("resultsBox").innerHTML = (nuevoCodigo.toUpperCase());
    
-     
+   
+    if (stringAscii>=65 && stringAscii>=90) {
+        ((stringAscii-65+n)%26+65);
+        codigo.push(stringAscii.fromCharcodeAt(texto.charCodeAt(i)));
+    }; 
+    console.log(codigo)
+
+
+    /*nuevoCodigo = nuevoCodigo.concat(texto[i]);
+    document.getElementById("resultsBox").innerHTML = (nuevoCodigo.toUpperCase());*/
 
 };
+
 //función que decodificará el texto
-function decifradoDeTexto(){}
+//function descifradoDeTexto(){}
 //Eventos para dar mostrar u ocultar divs
 
 //Eventos para dar funcionabilidad a los botones
