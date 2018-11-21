@@ -1,23 +1,29 @@
 
 
-function cifradoDeTexto(offset,texto){
+const button1 = document.getElementById("cifradoDeTexto");
+button1.addEventListener('click', cifradoDeTexto);
+
+function cifradoDeTexto(){
+    let offset = document.getElementById("offsetBox").value;
+    let texto = document.getElementById("textBox").value.toUpperCase();
     let stringAscii=[];
     let codigo=[];
-    
+    let nuevoCodigo=[];
 
     for(let i=0; i<texto.length; i++){
-        texto.toUpperCase();
-        stringAscii = texto.charCodeAt(i);
 
+        if (texto.charCodeAt(i)>=65 && texto.charCodeAt(i)<=90) {
+            stringAscii.push(((texto.charCodeAt(i)-65+offset)%26 + 65));
+            codigo.push(String.fromCharCode(stringAscii[i]));
+        };
     };
-    if (stringAscii>=65 && stringAscii<=90) {
-        ((stringAscii-65+offset)%26+65);
-        codigo.push(stringAscii.fromCharcodeAt(texto.charCodeAt(i)));
-    };
-
-
+    nuevoCodigo = codigo.join("");
+    console.log(nuevoCodigo);
 };
-function decifradoDeTexto(offset,texto){
+
+
+
+/*function decifradoDeTexto(offset,texto){
 
 
     for(let j=0; j<texto.length;j++){
@@ -28,44 +34,5 @@ function decifradoDeTexto(offset,texto){
         
     }
 
-};
-
-
-
-
-
-
-
-
-
-
-
-
-/*function cifradoDeTexto(){
-    let n; // n es el offset
-    let texto = '' ;//primer texto que es ingresado
-    let stringAscii = [] //aquí se va a guardar push del texto en ascii
-    let codigo = []; 
-    
-    n = document.getElementById("offsetBox").value;
-    texto = document.getElementById("textBox").value;
-    
-    for(let i=0; i<texto.length; i++){
-        stringAscii = texto.toUpperCase().charCodeAt(i); 
-          
-    };
-   
-   
-    if (stringAscii>=65 && stringAscii>=90) {
-        ((stringAscii-65+n)%26+65);
-        codigo.push(stringAscii.fromCharcodeAt(texto.charCodeAt(i)));
-    }; 
-    console.log(codigo)
-
-
-    nuevoCodigo = nuevoCodigo.concat(texto[i]);
-    document.getElementById("resultsBox").innerHTML = (nuevoCodigo.toUpperCase());*/
-
-};
-
+};*/
 
