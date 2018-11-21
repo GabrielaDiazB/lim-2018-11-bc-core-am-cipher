@@ -2,6 +2,8 @@
 
 const button1 = document.getElementById("cifradoDeTexto");
 button1.addEventListener('click', cifradoDeTexto);
+const button2 = document.getElementById("decifradoDeTexto");
+button2.addEventListener('click', decifradoDeTexto);
 
 function cifradoDeTexto(){
     let offset = document.getElementById("offsetBox").value;
@@ -13,7 +15,7 @@ function cifradoDeTexto(){
     for(let i=0; i<texto.length; i++){
 
         if (texto.charCodeAt(i)>=65 && texto.charCodeAt(i)<=90) {
-            stringAscii.push(((texto.charCodeAt(i)-65+offset)%26 + 65));
+            stringAscii.push(((texto.charCodeAt(i)-65+parseInt(offset))%26 + 65));
             codigo.push(String.fromCharCode(stringAscii[i]));
         };
     };
@@ -21,18 +23,20 @@ function cifradoDeTexto(){
     console.log(nuevoCodigo);
 };
 
+function decifradoDeTexto(){
+    let offset = document.getElementById("offsetBox").value;
+    let texto = document.getElementById("textBox").value.toUpperCase();
+    let stringAscii=[];
+    let codigo=[];
+    let nuevoCodigo=[];
 
+    for(let i=0; i<texto.length; i++){
 
-/*function decifradoDeTexto(offset,texto){
-
-
-    for(let j=0; j<texto.length;j++){
-        
+        if (texto.charCodeAt(i)>=65 && texto.charCodeAt(i)<=90) {
+            stringAscii.push(((texto.charCodeAt(i)-90-parseInt(offset))%26 + 90));
+            codigo.push(String.fromCharCode(stringAscii[i]));
+        };
     };
-    if (stringAscii>=65 && stringAscii<=90){
-
-        
-    }
-
-};*/
-
+    nuevoCodigo = codigo.join("");
+    console.log(nuevoCodigo);
+};
