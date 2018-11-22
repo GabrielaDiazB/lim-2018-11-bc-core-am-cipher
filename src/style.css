@@ -7,7 +7,9 @@ div{
     padding: 20px;
 
 }
-
+#cipherTextBox{
+    columns: auto 2;
+}
 p{
     text-align: center;
 
@@ -18,7 +20,7 @@ p{
     border-radius: 5px;
 }
 #textBox{
-    width:150px;
+    width:40%;
     border: 1px solid grey;
     border-radius: 5px;
     outline-color: red;
@@ -29,7 +31,7 @@ p{
     
 }
 #textBox:focus{
-    width:80%;
+    width:60%;
 }
 
 button {
