@@ -1,5 +1,6 @@
 body{
     margin: auto;
+    background-image: url(https://media.giphy.com/media/nYTxGOUuhLFao/giphy.gif);
 }
 
 div{
@@ -7,63 +8,144 @@ div{
     padding: 20px;
 
 }
+#root{
+    background-color: black;
+    border-width:5px;  
+    border-style:ridge;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+}
+#start{
+    position:absolute;
+    margin:auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+
+}
 #cipherTextBox{
     columns: auto 2;
+    
+}
+#resultsBox{
+    background-color: #E6ECF0;
+    border-width: 2px;
+    border-style: inset;
+    border-color: rgb(165, 170, 179);
+}
+h2{
+    color:#C84141;
+    font-family: 'Lucida Sans Unicode';
 }
 p{
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(28, 25, 226);
+
+
+}
+#resultados{
+    font-size: x-large;
+    font-style: italic;
+    letter-spacing:3px;
+    font-weight: bold;
+    color: rgb(28, 25, 226);
+}
+label{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-weight: normal;
+    color: rgb(46, 218, 20);
 
 }
 #offsetBox{
     width:10%;
-    border: 1px solid grey;
+    border: 1px solid rgb(146, 174, 233);
     border-radius: 5px;
+    background-color:#E6ECF0;
+    outline:none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    color: #C84141;
 }
 #textBox{
+    background-color:#E6ECF0;
     width:40%;
-    border: 1px solid grey;
+    border: 1px solid rgb(146, 174, 233);
     border-radius: 5px;
-    outline-color: red;
+    outline:none;
     -webkit-transition: width 0.5s ease-in-out;
     transition: width 0.5s ease-in-out;
-    resize: none;
-    
-    
+    resize: none; 
+    font-family: 'Courier New', Courier, monospace;
+    color: #C84141;
 }
 #textBox:focus{
     width:60%;
 }
 
 button {
-    background-color: steelblue;
-    color: whitesmoke;
+    background-color: whitesmoke;
+    color: black;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: normal;
     font-family: 'Courier New', Courier, monospace;
-    border-radius:5px;
+    border-radius:8px;
     border:none;
-    box-shadow: 0 2px #999;
-    transition-duration:0.3s;
+    box-shadow: 0 3px #999;
+    transition-duration:0.4s;
     margin:15px 0 15px 10px;
     outline: none;
   
 }
 
 button:hover{
-    background-color: cornflowerblue ;
-    color: white;
+    background-color: rgb(46, 218, 20);
+    color: whitesmoke;
     font-size:18px;
     font-weight: bold;
     border:none;
+    box-shadow: rgb(59, 59, 59);
 }
 
 button:active{
-    box-shadow: 0 1px #666;
+    box-shadow: 0 2px rgb(59, 59, 59);
+    transform: translateY(3px);
+}
+#reset{
+    background-color: whitesmoke ;
+    color: black;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius:8px;
+    border: none;
+    box-shadow: 0 3px #999;
+    transition-duration:0.4s;
+    margin:15px 0 15px 10px;
+    outline: none;
+}
+#reset:hover{
+    background-color: rgb(196, 44, 44);
+    color: whitesmoke;
+    font-size:18px;
+    font-weight: bold;
+    box-shadow: rgb(59, 59, 59);
+    
+}
+
+#reset:active{
+    box-shadow: 0 2px rgb(59, 59, 59);
     transform: translateY(3px);
 }
 
-#resultsBox{   
-    border-width: 2px;
-    border-style: inset;
-
-}
