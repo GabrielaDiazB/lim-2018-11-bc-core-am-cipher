@@ -10,7 +10,7 @@ div{
 }
 #root{
     background-color: black;
-    border-width:5px;  
+    border-width:8px;  
     border-style:ridge;
     position: absolute;
     margin: auto;
