@@ -16,7 +16,7 @@ return nuevoCodigo;
 };
 
 //función de decifrado de texto
-const decifradoDeTexto = (texto,offset)=>{
+const descifradoDeTexto = (texto,offset)=>{
   let stringAscii=[];
   let codigo=[];
   for(let i=0; i<texto.length; i++){
@@ -35,5 +35,5 @@ const decifradoDeTexto = (texto,offset)=>{
 
 window.cipher = {
   encode: cifradoDeTexto,
-  decode: decifradoDeTexto
+  decode: descifradoDeTexto
 }

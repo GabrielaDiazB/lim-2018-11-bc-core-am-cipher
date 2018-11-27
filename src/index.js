@@ -22,7 +22,7 @@ button1.addEventListener('click', function(event){
     resultados.innerHTML = nuevoCodigo;
 });
 
-const button2 = document.getElementById("decifradoDeTexto");
+const button2 = document.getElementById("descifradoDeTexto");
 button2.addEventListener('click',function(event){
     event.preventDefault();
     const texto = document.getElementById("textBox").value.toUpperCase();
