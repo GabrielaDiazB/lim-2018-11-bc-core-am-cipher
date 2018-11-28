@@ -9,7 +9,7 @@ function functionStartApp(){
     document.getElementById("start").style.display="none";
     document.getElementById("cipherBox").style.display="block";
     document.getElementById("results").style.display="block";
-};
+}
 
 const resultados = document.getElementById("resultados");
 
