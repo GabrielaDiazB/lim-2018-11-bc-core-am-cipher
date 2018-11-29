@@ -82,7 +82,7 @@ p{
 
 }
 #resultados{
-    font-size: x-large;
+    font-size: 30px;
     font-style: italic;
     letter-spacing:3px;
     font-weight: bold;
@@ -91,33 +91,37 @@ p{
 }
 label{
     font-family: 'Courier New', Courier, monospace;
-    font-size: medium;
+    font-size: larger;
     font-weight: normal;
     color: rgb(46, 218, 20);
 
 }
 #offsetBox{
-    width:10%;
+    width:30%;
     border: 1px solid rgb(146, 174, 233);
     border-radius: 5px;
     background-color:#E6ECF0;
     outline:none;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
     color: #C84141;
 }
 #textBox{
     background-color:#E6ECF0;
-    width:40%;
+    width:50%;
     border: 1px solid rgb(146, 174, 233);
     border-radius: 5px;
     outline:none;
     -webkit-transition: width 0.5s ease-in-out;
     transition: width 0.5s ease-in-out;
     resize: none; 
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New';
+    font-size: 30px;
+    font-weight: bold;
     color: #C84141;
+    
 }
 #textBox:focus{
     width:60%;
