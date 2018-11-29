@@ -1,17 +1,23 @@
-/*body{
-    margin: auto;
+body{
+    margin:auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
     background-image: url(https://media.giphy.com/media/nYTxGOUuhLFao/giphy.gif);
     
-}*/
+}
 
 div{
     text-align: center;
     padding: 20px;
-
 }
+
 #root{
     background-color: black;
-    border-width:8px;  
+    border-width:10px;  
     border-style:ridge;
     position: absolute;
     margin: auto;
@@ -23,17 +29,28 @@ div{
     height: 50%;
     
 }
+#page2{
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); 
+}
 #start{
-    position:absolute;
-    margin:0;
-    top: 0;
+    position:relative;
+    margin: auto;
+    top: 50%;
     right: 0;
     bottom: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); 
     padding: 0;
-    overflow: auto;
+    word-wrap: break-word;
+    justify-content: center;
+    
+    
 }
 
 #cipherTextBox{
@@ -50,11 +67,17 @@ div{
 h2{
     color:#C84141;
     font-family: 'Lucida Sans Unicode';
+    width: auto;
+    margin: auto;
 }
 p{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     color: rgb(28, 25, 226);
+    margin: auto;
+    width: auto;
+    height: auto;
+
 
 
 }
@@ -64,6 +87,7 @@ p{
     letter-spacing:3px;
     font-weight: bold;
     color: rgb(28, 25, 226);
+    word-wrap: break-word;
 }
 label{
     font-family: 'Courier New', Courier, monospace;
