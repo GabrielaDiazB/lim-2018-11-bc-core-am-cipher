@@ -12,9 +12,10 @@ const cifradoDeTexto =(texto,offset)=>{
   } else if (texto.charCodeAt(i)>=97 && texto.charCodeAt(i)<=122) {
     stringAscii.push(((texto.charCodeAt(i)-97+parseInt(offset))%26 + 97));
     codigo.push(String.fromCharCode(stringAscii[i]));
-  }
+  } else {stringAscii.push(texto.charCodeAt(i));
+    codigo.push(String.fromCharCode(stringAscii[i]))}
   
-   }
+  }
   return codigo.join("");
 };
 
@@ -32,7 +33,8 @@ const descifradoDeTexto = (texto,offset)=>{
     } else if (texto.charCodeAt(i)>=97 && texto.charCodeAt(i)<=122) {
       stringAscii.push(((texto.charCodeAt(i)-122-parseInt(offset))%26 + 122));
       codigo.push(String.fromCharCode(stringAscii[i]));
-    }
+    } else {stringAscii.push(texto.charCodeAt(i));
+      codigo.push(String.fromCharCode(stringAscii[i]))}
   }
   return codigo.join("");
 };
