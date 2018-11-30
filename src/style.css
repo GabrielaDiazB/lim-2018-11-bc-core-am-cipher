@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Chakra+Petch|Shadows+Into+Light');
 body{
     margin:auto;
     top: 0;
@@ -10,16 +11,17 @@ body{
     
 }
 
+
 div{
     text-align: center;
     padding: 20px;
 }
 
 #root{
+    position: absolute;
     background-color: black;
     border-width:10px;  
     border-style:ridge;
-    position: absolute;
     margin: auto;
     top: 0;
     right: 0;
@@ -27,6 +29,7 @@ div{
     left: 0;
     width: 50%;
     height: 50%;
+    opacity: 0.8;
     
 }
 #page2{
@@ -34,7 +37,9 @@ div{
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
+    margin: 0 auto;
+
 }
 #start{
     position:relative;
@@ -58,25 +63,34 @@ div{
     
 }
 #resultsBox{
-    background-color: #E6ECF0;
+    background-color: #BDD3DE;
     border-width: 2px;
     border-style: inset;
     border-color: rgb(165, 170, 179);
+    font-family: 'Shadows Into Light', cursive;
     
+}
+#resultados{
+    font-family: 'Shadows Into Light', cursive;
 }
 h2{
     color:#C84141;
-    font-family: 'Lucida Sans Unicode';
+    font-family: 'Chakra Petch', sans-serif;
+    /*font-family: 'Lucida Sans Unicode';*/
     width: auto;
     margin: auto;
+    font-size: 30px;
 }
 p{
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    /*font-family: 'Courier New', Courier, monospace;*/
+    font-family: 'Chakra Petch', sans-serif;
     color: rgb(28, 25, 226);
     margin: auto;
     width: auto;
     height: auto;
+    font-size: 25px;
+    padding: 2%;
 
 
 
@@ -88,36 +102,40 @@ p{
     font-weight: bold;
     color: rgb(28, 25, 226);
     word-wrap: break-word;
+    
 }
 label{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: larger;
+    font-family: 'Chakra Petch', sans-serif;
+    /*font-family: 'Courier New', Courier, monospace;*/
+    font-size: 25px;
     font-weight: normal;
-    color: rgb(46, 218, 20);
+    color: #08FF1C;
 
 }
 #offsetBox{
     width:30%;
     border: 1px solid rgb(146, 174, 233);
     border-radius: 5px;
-    background-color:#E6ECF0;
+    background-color:#BDD3DE;
     outline:none;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Chakra Petch', sans-serif;
+    /*font-family: 'Courier New', Courier, monospace;*/
     font-size: 30px;
     font-weight: bold;
     text-align: center;
     color: #C84141;
 }
 #textBox{
-    background-color:#E6ECF0;
+    background-color:#BDD3DE;
     width:50%;
     border: 1px solid rgb(146, 174, 233);
     border-radius: 5px;
     outline:none;
     -webkit-transition: width 0.5s ease-in-out;
     transition: width 0.5s ease-in-out;
-    resize: none; 
-    font-family: 'Courier New';
+    resize: none;
+    font-family: 'Chakra Petch', sans-serif; 
+    /*font-family: 'Courier New';*/
     font-size: 30px;
     font-weight: bold;
     color: #C84141;
@@ -132,19 +150,22 @@ button {
     color: black;
     font-size: 18px;
     font-weight: normal;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Chakra Petch', sans-serif;
+    /*font-family: 'Courier New', Courier, monospace;*/
     border-radius:8px;
     border:none;
     box-shadow: 0 3px #999;
     transition-duration:0.4s;
     margin:15px 0 15px 10px;
     outline: none;
+    width: 120px;
+    height: 25px;
   
 }
 
 button:hover{
-    background-color: rgb(46, 218, 20);
-    color: whitesmoke;
+    background-color: #08FF1C;
+    color: #000801;
     font-size:18px;
     font-weight: bold;
     border:none;
@@ -160,17 +181,20 @@ button:active{
     color: black;
     font-size: 18px;
     font-weight: normal;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Chakra Petch', sans-serif;
+    /*font-family: 'Courier New', Courier, monospace;*/
     border-radius:8px;
     border: none;
     box-shadow: 0 3px #999;
     transition-duration:0.4s;
     margin:15px 0 15px 10px;
     outline: none;
+    width: 120px;
+    height: 25px;
 }
 #reset:hover{
     background-color: rgb(196, 44, 44);
-    color: whitesmoke;
+    color: #000801;
     font-size:18px;
     font-weight: bold;
     box-shadow: rgb(59, 59, 59);

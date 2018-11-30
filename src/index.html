@@ -2,14 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Shhh...</title>
     <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
     <div id="root">
       <div id="start">
-        <h2>Título de Proyecto (Cifrado/Descifrado) :'v</h2>
-        <p>Explicación de la funcionabilidad de la aplicación. 1. Ingresar texto a codificar 2. Añadir desplazamiento al encriptador. 3. Elegir acción</p>
+        <h2>Cipher Decryption Tool. Encriptador de Texto</h2>
+        <p>¿Guardas secretos? ¿Están al pendiente de lo que escribes? ¿No quieres que nadie se entere? Tan solo ingresa el texto y asegúrate de no olvidar tu key. </p>
         <button type="button" id="buttonStart">Comenzar</button>
       </div>
       <div id="page2">
@@ -20,18 +20,18 @@
                <input type="text" id="textBox">
               </div>
               <div id="boxInputOffset">
-                <label for="offsetBox">Ingresar el desplazamiento:</label>
+                <label for="offsetBox">Ingresar Key:</label>
                 <input type="number" id="offsetBox">
               </div>
             </div>      
               <button type="button" id="cifradoDeTexto"> Cifrar </button>
               <button type="button" id="descifradoDeTexto"> Descifrar </button>
-            </div>
-            <div id="results">
+          </div>
+          <div id="results">
                 <label for="resultsBox">Texto Resultado:</label>
                 <div id="resultsBox"><p id="resultados"></p></div>
                 <input type="button" value="Volver" onclick="location.reload()" id="reset">
-            </div>
+          </div>
       </div>    
     </div>
     <script src="cipher.js"></script>

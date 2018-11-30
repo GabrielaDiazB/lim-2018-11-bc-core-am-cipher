@@ -1,3 +1,21 @@
+##Cipher Decryption Tool
+###Encriptador de Texto
+
+**¿Guardas secretos? ¿Están al pendiente de lo que escribes? ¿No quieres que nadie se entere? Tan solo ingresa el texto y asegúrate de no olvidar tu key.** 
+
+***
+
+Esta aplicación web fue desarrollada pensando en aquellos usuarios que quieren escribir algo sin que nadie más que él mismo sepa lo que está diciendo. Puede ser usado como mensajería secreta, simple cifrado de un texto, seguridad personal, contraseñas o incluso subtweets. *El motivo lo decide el usuario, la app web se lo facilita.* 
+
+
+
+
+
+
+
+
+
+
 # Cifrado César
 
 Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.

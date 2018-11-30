@@ -16,7 +16,7 @@ const resultados = document.getElementById("resultados");
 const button1 = document.getElementById("cifradoDeTexto");
 button1.addEventListener('click', function(event){
     event.preventDefault();
-    const texto = document.getElementById("textBox").value.toUpperCase();
+    const texto = document.getElementById("textBox").value;//.toUpperCase();
     const offset = document.getElementById("offsetBox").value;
     const nuevoCodigo = cipher.encode(texto,offset);
     resultados.innerHTML = nuevoCodigo;
@@ -25,7 +25,7 @@ button1.addEventListener('click', function(event){
 const button2 = document.getElementById("descifradoDeTexto");
 button2.addEventListener('click',function(event){
     event.preventDefault();
-    const texto = document.getElementById("textBox").value.toUpperCase();
+    const texto = document.getElementById("textBox").value;//.toUpperCase();
     const offset = document.getElementById("offsetBox").value;
     const nuevoCodigo = cipher.decode(texto,offset);
     resultados.innerHTML = nuevoCodigo;
