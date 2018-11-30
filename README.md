@@ -1,5 +1,5 @@
-##Cipher Decryption Tool
-###Encriptador de Texto
+## Cipher Decryption Tool
+### Encriptador de Texto
 
 **¿Guardas secretos? ¿Están al pendiente de lo que escribes? ¿No quieres que nadie se entere? Tan solo ingresa el texto y asegúrate de no olvidar tu key.** 
 
