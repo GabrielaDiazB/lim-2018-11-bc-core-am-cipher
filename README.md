@@ -1,18 +1,11 @@
-##Cipher Decryption Tool
-###Encriptador de Texto
+## Cipher Decryption Tool
+### Encriptador de Texto
 
 **¿Guardas secretos? ¿Están al pendiente de lo que escribes? ¿No quieres que nadie se entere? Tan solo ingresa el texto y asegúrate de no olvidar tu key.** 
 
 ***
 
 Esta aplicación web fue desarrollada pensando en aquellos usuarios que quieren escribir algo sin que nadie más que él mismo sepa lo que está diciendo. Puede ser usado como mensajería secreta, simple cifrado de un texto, seguridad personal, contraseñas o incluso subtweets. *El motivo lo decide el usuario, la app web se lo facilita.* 
-
-
-
-
-
-
-
 
 
 
