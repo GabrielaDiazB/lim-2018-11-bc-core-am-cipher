@@ -1,5 +1,5 @@
 //función de cifrado de texto
-const cifradoDeTexto =(texto,offset)=>{
+const cifradoDeTexto =(offset, texto)=>{
   let stringAscii=[];
   let codigo=[];
   for(let i=0; i<texto.length; i++){
@@ -20,7 +20,7 @@ const cifradoDeTexto =(texto,offset)=>{
 };
 
 //función de decifrado de texto
-const descifradoDeTexto = (texto,offset)=>{
+const descifradoDeTexto = (offset, texto)=>{
   let stringAscii=[];
   let codigo=[];
   for(let i=0; i<texto.length; i++){
@@ -30,10 +30,10 @@ const descifradoDeTexto = (texto,offset)=>{
     } else if (texto.charCodeAt(i)==32) {
       stringAscii.push(texto.charCodeAt(i));
       codigo.push(String.fromCharCode(stringAscii[i]));
-    } else if (texto.charCodeAt(i)>=97 && texto.charCodeAt(i)<=122) {
+    } else if (texto.charCodeAt(i)>=97 && texto.charCodeAt(i)<=122){
       stringAscii.push(((texto.charCodeAt(i)-122-parseInt(offset))%26 + 122));
       codigo.push(String.fromCharCode(stringAscii[i]));
-    } else {stringAscii.push(texto.charCodeAt(i));
+    }else {stringAscii.push(texto.charCodeAt(i));
       codigo.push(String.fromCharCode(stringAscii[i]))}
   }
   return codigo.join("");
