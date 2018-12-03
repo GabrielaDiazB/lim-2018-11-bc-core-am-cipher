@@ -13,23 +13,34 @@ function functionStartApp(){
 
 const resultados = document.getElementById("resultados");
 
+
+//Botón para Cifrar+Evento
 const button1 = document.getElementById("cifradoDeTexto");
 button1.addEventListener('click', function(event){
     event.preventDefault();
-    const texto = document.getElementById("textBox").value;//.toUpperCase();
+    const text = document.getElementById("textBox").value;
     const offset = document.getElementById("offsetBox").value;
-    const nuevoCodigo = cipher.encode(texto,offset);
-    resultados.innerHTML = nuevoCodigo;
+    const code = cipher.encode(offset, text);
+    resultados.innerHTML = code;
 });
 
+//Botón para Descifrar+Evento
 const button2 = document.getElementById("descifradoDeTexto");
 button2.addEventListener('click',function(event){
     event.preventDefault();
-    const texto = document.getElementById("textBox").value;//.toUpperCase();
+    const text = document.getElementById("textBox").value;
     const offset = document.getElementById("offsetBox").value;
-    const nuevoCodigo = cipher.decode(texto,offset);
-    resultados.innerHTML = nuevoCodigo;
+    const code = cipher.decode(offset, text);
+    resultados.innerHTML = code;
 });
+
+//Botón para copiar el resultado
+/*const button3 = document.getElementById('copyBtn');
+
+button3.addEventListener('click', () => {
+   const copyText = document.getElementById('resultados');
+   copyText=document.execCommand('copy');
+});*/
 
 
 
