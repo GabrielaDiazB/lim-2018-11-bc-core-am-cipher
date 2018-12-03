@@ -34,6 +34,14 @@ button2.addEventListener('click',function(event){
     resultados.innerHTML = code;
 });
 
+//Botón para copiar el resultado
+/*const button3 = document.getElementById('copyBtn');
+
+button3.addEventListener('click', () => {
+   const copyText = document.getElementById('resultados');
+   copyText=document.execCommand('copy');
+});*/
+
 
 
 
