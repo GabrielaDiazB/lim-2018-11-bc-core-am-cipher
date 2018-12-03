@@ -13,22 +13,25 @@ function functionStartApp(){
 
 const resultados = document.getElementById("resultados");
 
+
+//Botón para Cifrar+Evento
 const button1 = document.getElementById("cifradoDeTexto");
 button1.addEventListener('click', function(event){
     event.preventDefault();
-    const texto = document.getElementById("textBox").value;//.toUpperCase();
+    const text = document.getElementById("textBox").value;
     const offset = document.getElementById("offsetBox").value;
-    const codigo = cipher.encode(offset, texto);
-    resultados.innerHTML = codigo;
+    const code = cipher.encode(offset, text);
+    resultados.innerHTML = code;
 });
 
+//Botón para Descifrar+Evento
 const button2 = document.getElementById("descifradoDeTexto");
 button2.addEventListener('click',function(event){
     event.preventDefault();
-    const texto = document.getElementById("textBox").value;//.toUpperCase();
+    const text = document.getElementById("textBox").value;
     const offset = document.getElementById("offsetBox").value;
-    const codigo = cipher.decode(offset, texto);
-    resultados.innerHTML = codigo;
+    const code = cipher.decode(offset, text);
+    resultados.innerHTML = code;
 });
 
 
