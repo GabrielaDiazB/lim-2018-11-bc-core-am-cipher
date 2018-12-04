@@ -78,16 +78,16 @@ div{
     
 }
 
-#cipherTextBox{
+#cipher-text-box{
     columns: auto 2;
     padding: 0;
     
 }
-#cipherBox{
+#cipher-box{
     padding: 0;
 }
 
-#resultsBox{
+#results-box{
     padding: 0;    
 }
    
@@ -111,7 +111,7 @@ div{
     
 }
 
-h2{
+h1 {
     color:#C84141;
     font-family: 'Chakra Petch', sans-serif;
     width: auto;
@@ -139,7 +139,7 @@ h3{
 
 }
 
-#offsetBox{
+#offset-box{
     width:30%;
     border: 1px solid rgb(146, 174, 233);
     border-radius: 5px;
@@ -152,7 +152,7 @@ h3{
     color: #C84141;
 }
 
-#textBox{
+#text-box{
     background-color:#BDD3DE;
     width:50%;
     border: 1px solid rgb(146, 174, 233);
@@ -168,7 +168,7 @@ h3{
     
 }
 
-#textBox:focus{
+#text-box:focus{
     width:60%;
 }
 
