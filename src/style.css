@@ -38,6 +38,7 @@ div{
     position: absolute;
     justify-content: center;
     align-content: center;
+    margin: auto;
 
 
 }
@@ -85,7 +86,7 @@ p{
     text-align: center;
     /*font-family: 'Courier New', Courier, monospace;*/
     font-family: 'Chakra Petch', sans-serif;
-    color: rgb(28, 25, 226);
+    color: #0AADE8;
     margin: auto;
     width: auto;
     height: auto;
@@ -104,7 +105,7 @@ p{
     word-wrap: break-word;
     
 }
-label{
+h3{
     font-family: 'Chakra Petch', sans-serif;
     /*font-family: 'Courier New', Courier, monospace;*/
     font-size: 25px;
