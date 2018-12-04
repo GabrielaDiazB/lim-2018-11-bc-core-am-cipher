@@ -35,12 +35,13 @@ button2.addEventListener('click',function(event){
 });
 
 //Botón para copiar el resultado
-/*const button3 = document.getElementById('copyBtn');
+const button3 = document.getElementById('copyBtn');
 
 button3.addEventListener('click', () => {
-   const copyText = document.getElementById('resultados');
-   copyText=document.execCommand('copy');
-});*/
+   const copyText = document.getElementById("resultados");
+   copyText.select();
+   document.execCommand("copy");
+});
 
 
 

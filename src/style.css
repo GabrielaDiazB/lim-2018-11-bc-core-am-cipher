@@ -11,7 +11,6 @@ body{
     
 }
 
-
 div{
     text-align: center;
     padding: 20px;
@@ -29,20 +28,41 @@ div{
     right: 0;
     bottom: 0;
     left: 0;
-    width: 60%;
+    width: 50%;
     height: 60%;
     opacity: 0.8;
-    
+    overflow: auto;    
 }
+#root::-webkit-scrollbar-track
+{
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#root::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#root::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #08FF1C;
+}
+
 #page2{
-    position: absolute;
     justify-content: center;
     align-content: center;
-
-
+    margin:auto;
+    height: 80%;
+    padding: 0;
 }
+
 #start{
-    position:relative;
+    position: absolute;
     margin: auto;
     top: 50%;
     right: 0;
@@ -54,64 +74,71 @@ div{
     padding: 0;
     word-wrap: break-word;
     justify-content: center;
-    
+    align-content: center;
     
 }
 
 #cipherTextBox{
     columns: auto 2;
+    padding: 0;
     
 }
+#cipherBox{
+    padding: 0;
+}
+
 #resultsBox{
+    padding: 0;    
+}
+   
+#resultados{
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing:3px;
+    font-weight: bold;
+    color: rgb(28, 25, 226);
+    word-wrap: break-word;
+    text-align:center;
     background-color: #BDD3DE;
     border-width: 2px;
     border-style: inset;
     border-color: rgb(165, 170, 179);
-    font-family: 'Shadows Into Light', cursive;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    
     
 }
-#resultados{
-    font-family: 'Shadows Into Light', cursive;
-}
+
 h2{
     color:#C84141;
     font-family: 'Chakra Petch', sans-serif;
-    /*font-family: 'Lucida Sans Unicode';*/
     width: auto;
     margin: auto;
     font-size: 30px;
 }
+
 p{
     text-align: center;
-    /*font-family: 'Courier New', Courier, monospace;*/
     font-family: 'Chakra Petch', sans-serif;
-    color: rgb(28, 25, 226);
+    color: #0AADE8;
     margin: auto;
     width: auto;
     height: auto;
     font-size: 25px;
     padding: 2%;
-
-
-
 }
-#resultados{
-    font-size: 30px;
-    font-style: italic;
-    letter-spacing:3px;
-    font-weight: bold;
-    color: rgb(28, 25, 226);
-    word-wrap: break-word;
-    
-}
-label{
+
+
+h3{
     font-family: 'Chakra Petch', sans-serif;
-    /*font-family: 'Courier New', Courier, monospace;*/
     font-size: 25px;
     font-weight: normal;
     color: #08FF1C;
 
 }
+
 #offsetBox{
     width:30%;
     border: 1px solid rgb(146, 174, 233);
@@ -119,12 +146,12 @@ label{
     background-color:#BDD3DE;
     outline:none;
     font-family: 'Chakra Petch', sans-serif;
-    /*font-family: 'Courier New', Courier, monospace;*/
     font-size: 30px;
     font-weight: bold;
     text-align: center;
     color: #C84141;
 }
+
 #textBox{
     background-color:#BDD3DE;
     width:50%;
@@ -135,12 +162,12 @@ label{
     transition: width 0.5s ease-in-out;
     resize: none;
     font-family: 'Chakra Petch', sans-serif; 
-    /*font-family: 'Courier New';*/
     font-size: 30px;
     font-weight: bold;
     color: #C84141;
     
 }
+
 #textBox:focus{
     width:60%;
 }
@@ -151,16 +178,17 @@ button {
     font-size: 18px;
     font-weight: normal;
     font-family: 'Chakra Petch', sans-serif;
-    /*font-family: 'Courier New', Courier, monospace;*/
     border-radius:8px;
     border:none;
     box-shadow: 0 3px #999;
-    transition-duration:0.4s;
-    margin:15px 0 15px 10px;
+    transition-duration:0.5s;
+    margin:45px 0 0 10px;
     outline: none;
     width: 120px;
     height: 25px;
-  
+    text-align: center;
+    align-content: center;
+    justify-content: center; 
 }
 
 button:hover{
@@ -176,6 +204,7 @@ button:active{
     box-shadow: 0 2px rgb(59, 59, 59);
     transform: translateY(3px);
 }
+
 #reset{
     background-color: whitesmoke ;
     color: black;
@@ -186,12 +215,13 @@ button:active{
     border-radius:8px;
     border: none;
     box-shadow: 0 3px #999;
-    transition-duration:0.4s;
+    transition-duration:0.5s;
     margin:15px 0 15px 10px;
     outline: none;
     width: 120px;
     height: 25px;
 }
+
 #reset:hover{
     background-color: rgb(196, 44, 44);
     color: #000801;
